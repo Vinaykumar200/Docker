@@ -6,6 +6,11 @@ pipeline{
                 git "https://github.com/Vinaykumar200/Docker.git"
             }
         }
+         stage("compile"){
+            steps{
+            sh "mvn clean compile"
+            }
+        }
         
          stage("package"){
             steps{
