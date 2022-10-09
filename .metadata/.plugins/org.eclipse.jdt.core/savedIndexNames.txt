@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Docker_assessment\AWS_assessment\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
