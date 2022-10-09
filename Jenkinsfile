@@ -4,7 +4,7 @@ pipeline{
         
         stage("checkout"){
             steps{
-                git "https://github.com/Vinaykumar200/Docker.git"
+                git "https://github.com/Vinaykumar200/Docker/blob/vinay"
             }
         }
          stage("package"){
