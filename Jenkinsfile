@@ -9,13 +9,13 @@ pipeline{
         
          stage("package"){
             steps{
-            sh "mvn clean package"
+            bat "mvn clean package"
             }
         }
         
         stage("docker_build"){
             steps{
-            sh "sudo docker build -t empdata:1.0 ."
+            bat "docker build -t app:1.0 ."
             }
         }
         
