@@ -13,5 +13,3 @@ logging:
   level:
     root: ERROR
     '[com.zaxxer.hikari]': DEBUG
-    
-  
