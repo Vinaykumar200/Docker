@@ -4,8 +4,10 @@ pipeline{
         
         stage("checkout"){
             steps{
-                git "https://github.com/Vinaykumar200/Docker/blob/vinay"
+                git "https://github.com/Vinaykumar200/Docker.git"
+                bat "git checkout vinay"
             }
+            
         }
          stage("package"){
             steps{
