@@ -1,12 +1,6 @@
 pipeline{
     agent any
-    stages{
-        stage("checkout"){
-            steps{
-                git "https://github.com/Vinaykumar200/Docker.git"
-            }
-        }
-        
+    stages{ 
          stage("package"){
             steps{
             bat "mvn clean package"
