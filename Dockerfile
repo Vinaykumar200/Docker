@@ -1,4 +1,6 @@
 FROM openjdk:11
-COPY emp-data-service-1.0.jar /home/emp-data-service-1.0/
-WORKDIR /home/emp-data-service-1.0
-CMD java -jar emp-data-service-1.0.jar
+ENV JAVA_OPTS=""
+ARG JAR_FILE
+ADD ${JAR_FILE} /home/app.jar
+WORKDIR /home/
+CMD java -jar $JAVA_OPTS app.jar
