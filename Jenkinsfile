@@ -15,7 +15,7 @@ pipeline{
         
         stage("docker_build"){
             steps{
-            bat "docker build -t empdata:1.0 ."
+            bat "docker build -t app:1.0 ."
             }
         }
         
