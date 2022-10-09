@@ -5,6 +5,7 @@ pipeline{
         stage("checkout"){
             steps{
                 git "https://github.com/Vinaykumar200/Docker.git"
+                bat "git checkout -b vinay"
             }
             
         }
